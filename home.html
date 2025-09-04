@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Evergreen Solutions LLC — CS 4800</title>
+  <meta name="color-scheme" content="light" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <a class="skip" href="#company">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">ES</div>
+      <div>
+        <h1 class="brand-name">Evergreen Solutions LLC</h1>
+        <p class="brand-tagline">CS 4800</p>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#company" class="nav-link">Company</a>
+      <a href="#staff"   class="nav-link">Staff</a>
+      <a href="#docs"    class="nav-link">Docs</a>
+      <a href="#sprints" class="nav-link">Sprints</a>
+      <a href="#dailies" class="nav-link">Dailies</a>
+      <a href="#report"  class="nav-link">Report</a>
+      <a href="#repo"    class="nav-link">Repo</a>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <!-- COMPANY (default) -->
+    <section id="company" class="view">
+      <article class="card">
+        <h2>Company</h2>
+        <p class="muted">Learn everything about Evergreen Solutions.</p>
+        <ul class="compact">
+          <li>Staff roster</li>
+          <li>Documentation links</li>
+          <li>Sprint meeting logs</li>
+          <li>Daily meeting logs</li>
+          <li>Project report outline</li>
+          <li>GitHub repository</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- STAFF -->
+    <section id="staff" class="view" aria-labelledby="staff-title">
+      <article class="card">
+        <h2 id="staff-title">Staff</h2>
+        <ul class="staff-grid" role="list">
+          <li class="staff-card">
+            <div class="staff-avatar" aria-hidden="true">AM</div>
+            <div><h3 class="staff-name">Aryan Mitharwal</h3><p class="muted"><a href="mailto:amitharwal@cpp.edu">amitharwal@cpp.edu</a></p></div>
+          </li>
+          <li class="staff-card">
+            <div class="staff-avatar" aria-hidden="true">TD</div>
+            <div><h3 class="staff-name">Thanh Dang</h3><p class="muted"><a href="mailto:ttdang@cpp.edu">ttdang@cpp.edu</a></p></div>
+          </li>
+          <li class="staff-card">
+            <div class="staff-avatar" aria-hidden="true">JC</div>
+            <div><h3 class="staff-name">James Choi</h3><p class="muted"><a href="mailto:jameschoi1@cpp.edu">jameschoi1@cpp.edu</a></p></div>
+          </li>
+          <li class="staff-card">
+            <div class="staff-avatar" aria-hidden="true">VW</div>
+            <div><h3 class="staff-name">Vincent Wang</h3><p class="muted"><a href="mailto:vincentwang@cpp.edu">vincentwang@cpp.edu</a></p></div>
+          </li>
+          <li class="staff-card">
+            <div class="staff-avatar" aria-hidden="true">LB</div>
+            <div><h3 class="staff-name">Logan Bailey</h3><p class="muted"><a href="mailto:ljbailey@cpp.edu">ljbailey@cpp.edu</a></p></div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- DOCS -->
+    <section id="docs" class="view" aria-labelledby="docs-title">
+      <article class="card">
+        <h2 id="docs-title">Documentation</h2>
+        <p class="muted">No documentation posted yet.</p>
+        <ul class="compact">
+          <li>Vision &amp; Scope — <span class="muted">TBD</span></li>
+          <li>Requirements (SRS) — <span class="muted">TBD</span></li>
+          <li>ADRs — <span class="muted">TBD</span></li>
+          <li>OpenAPI — <span class="muted">TBD</span></li>
+          <li>Testing Strategy — <span class="muted">TBD</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- SPRINTS -->
+    <section id="sprints" class="view" aria-labelledby="sprints-title">
+      <article class="card">
+        <h2 id="sprints-title">Sprint Logs</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Date</th><th>Type</th><th>Notes</th><th>Link</th></tr></thead>
+            <tbody>
+              <tr><td colspan="4" class="muted">No sprint meetings recorded yet.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <!-- DAILIES -->
+    <section id="dailies" class="view" aria-labelledby="dailies-title">
+      <article class="card">
+        <h2 id="dailies-title">Daily Stand‑ups</h2>
+        <p class="muted">Mark attendance and add shared notes. Print to save as PDF.</p>
+
+        <form class="standup-form" action="#" method="get">
+          <div class="standup-grid">
+            <div>
+              <label for="meet-date"><strong>Date</strong></label>
+              <input id="meet-date" name="date" type="date" />
+            </div>
+
+            <fieldset>
+              <legend><strong>Attendance</strong></legend>
+              <div class="chips">
+                <span class="chip"><input class="visually-hidden" type="checkbox" id="a1" checked /><label for="a1"><span class="mark" aria-hidden="true"></span> Aryan</label></span>
+                <span class="chip"><input class="visually-hidden" type="checkbox" id="a2" checked /><label for="a2"><span class="mark" aria-hidden="true"></span> Thanh</label></span>
+                <span class="chip"><input class="visually-hidden" type="checkbox" id="a3" checked /><label for="a3"><span class="mark" aria-hidden="true"></span> James</label></span>
+                <span class="chip"><input class="visually-hidden" type="checkbox" id="a4" checked /><label for="a4"><span class="mark" aria-hidden="true"></span> Vincent</label></span>
+                <span class="chip"><input class="visually-hidden" type="checkbox" id="a5" checked /><label for="a5"><span class="mark" aria-hidden="true"></span> Logan</label></span>
+              </div>
+            </fieldset>
+
+            <div class="full">
+              <label for="notes"><strong>Shared Notes</strong></label>
+              <textarea id="notes" name="notes" placeholder="- What was done
+- Plans
+- Blockers"></textarea>
+            </div>
+
+            <div class="full">
+              <a
+                class="btn"
+                download="standup-template.md"
+                href="data:text/markdown;charset=utf-8,###%20Stand-up%20%E2%80%94%20YYYY-MM-DD%0A%0A**Attendance**%0A-%20%5B%20%5D%20Aryan%20Mitharwal%0A-%20%5B%20%5D%20Thanh%20Dang%0A-%20%5B%20%5D%20James%20Choi%0A-%20%5B%20%5D%20Vincent%20Wang%0A-%20%5B%20%5D%20Logan%20Bailey%0A%0A**Notes**%0A-%20(add%20notes)"
+                >Download Markdown template</a>
+              <span class="muted nowrap" style="margin-left:8px">or print this section.</span>
+            </div>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <!-- REPORT -->
+    <section id="report" class="view" aria-labelledby="report-title">
+      <article class="card">
+        <h2 id="report-title">Project Report</h2>
+        <ul class="compact">
+          <li>Introduction — <span class="muted">TBD</span></li>
+          <li>Design &amp; Architecture — <span class="muted">TBD</span></li>
+          <li>Implementation — <span class="muted">TBD</span></li>
+          <li>Testing &amp; QA — <span class="muted">TBD</span></li>
+          <li>Conclusion &amp; Future Work — <span class="muted">TBD</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- REPO -->
+    <section id="repo" class="view" aria-labelledby="repo-title">
+      <article class="card">
+        <h2 id="repo-title">GitHub Repository</h2>
+        <p class="muted">Repository URL will be added.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Evergreen Solutions LLC</small>
+  </footer>
+
+</body>
+</html>
